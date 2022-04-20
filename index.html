@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO list</title>
+    <link rel="stylesheet" href="/node_modules/normalize.css/">
+    <link rel="stylesheet" href="/main.css">
 </head>
 <body>
     <header>
         <h1>TODO LIST</h1>
+        <form id="new-task-form">
+            <input type="text" placeholder="Nouvelle tâche à ajouter" id="new-task-input">
+            <input type="submit" value="Ajouter">
+        </form>
     </header>
-    <form id="new-task-form">
-        <input type="text" placeholder="Nouvelle tâche à ajouter" id="new-task-input">
-        <input type="submit" value="Ajouter">
-        <input type="submit" value="Supprimer">
-    </form>
+
+    <main>
+        <h2>
+            Ma liste de tâches
+        </h2>
+        <div class="tasks">
+            <div class="task">
+                <input type="text" value="Une super tâche à effectuer">
+                <div class="actions">
+                    <button type="submit" id="edit-button">Modifier</button>
+                    <button type="submit" id="delete-button">Supprimer</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
 </body>
 </html>
